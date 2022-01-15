@@ -1,0 +1,181 @@
+Last login: Sat Jan 15 12:36:14 on ttys000
+(base) masae@kinnoMacBook-Pro ~ % ls 
+Applications			go
+Desktop				go projects
+Developer			javacode
+Documents			masae
+Downloads			my_app
+Library				opt
+Movies				package-lock.json
+Music				package.json
+Pictures			python1.py
+Public				pythondjango
+PycharmProjects			tensorflow
+StudioProjects			typescript
+Untitled.ipynb			typescript-for-javascript
+Untitled1.ipynb			typescript-javascript
+Visual Studio Projects
+(base) masae@kinnoMacBook-Pro ~ % cd typescript-javascript
+(base) masae@kinnoMacBook-Pro typescript-javascript % ls
+README.md		package-lock.json	src
+node_modules		package.json
+(base) masae@kinnoMacBook-Pro typescript-javascript % git branch   
+  create-package2-json
+* install-typescript
+  main
+(base) masae@kinnoMacBook-Pro typescript-javascript % tsc
+Version 4.5.4
+tsc: The TypeScript Compiler - Version 4.5.4                                    
+                                                                             TS 
+COMMON COMMANDS
+
+  tsc
+  Compiles the current project (tsconfig.json in the working directory.)
+
+  tsc app.ts util.ts
+  Ignoring tsconfig.json, compiles the specified files with default compiler options.
+
+  tsc -b
+  Build a composite project in the working directory.
+
+  tsc --init
+  Creates a tsconfig.json with the recommended settings in the working directory.
+
+  tsc -p ./path/to/tsconfig.json
+  Compiles the TypeScript project located at the specified path.
+
+  tsc --help --all
+  An expanded version of this information, showing all possible compiler options
+
+  tsc --noEmit
+  tsc --target esnext
+  Compiles the current project, with additional settings.
+
+COMMAND LINE FLAGS
+
+     --help, -h  Print this message.
+
+    --watch, -w  Watch input files.
+
+          --all  Show all compiler options.
+
+  --version, -v  Print the compiler's version.
+
+         --init  Initializes a TypeScript project and creates a tsconfig.json fi                 le.
+
+  --project, -p  Compile the project given the path to its configuration file, o                 r to a folder with a 'tsconfig.json'.
+
+    --build, -b  Build one or more projects and their dependencies, if out of da                 te
+
+   --showConfig  Print the final configuration instead of building.
+
+COMMON COMPILER OPTIONS
+
+               --pretty  Enable color and formatting in TypeScript's output to m                         ake compiler errors easier to read
+                  type:  boolean
+               default:  true
+
+           --target, -t  Set the JavaScript language version for emitted JavaScr                         ipt and include compatible library declarations.
+                one of:  es3, es5, es6, es2015, es2016, es2017, es2018, es2019,                          es2020, es2021, esnext
+               default:  ES3
+
+           --module, -m  Specify what module code is generated.
+                one of:  none, commonjs, amd, system, umd, es6, es2015, es2020,                          es2022, esnext, node12, nodenext
+
+                  --lib  Specify a set of bundled library declaration files that                          describe the target runtime environment.
+           one or more:  es5, es6, es2015, es7, es2016, es2017, es2018, es2019,                          es2020, es2021, esnext, dom, dom.iterable, webworker, w                         ebworker.importscripts, webworker.iterable, scripthost,                          es2015.core, es2015.collection, es2015.generator, es20                         15.iterable, es2015.promise, es2015.proxy, es2015.refle                         ct, es2015.symbol, es2015.symbol.wellknown, es2016.arra                         y.include, es2017.object, es2017.sharedmemory, es2017.s                         tring, es2017.intl, es2017.typedarrays, es2018.asyncgen                         erator, es2018.asynciterable, es2018.intl, es2018.promi                         se, es2018.regexp, es2019.array, es2019.object, es2019.                         string, es2019.symbol, es2020.bigint, es2020.promise, e                         s2020.sharedmemory, es2020.string, es2020.symbol.wellkn                         own, es2020.intl, es2021.promise, es2021.string, es2021                         .weakref, es2021.intl, esnext.array, esnext.symbol, esn                         ext.asynciterable, esnext.intl, esnext.bigint, esnext.s                         tring, esnext.promise, esnext.weakref
+
+              --allowJs  Allow JavaScript files to be a part of your program. Us                         e the `checkJS` option to get errors from these files.
+                  type:  boolean
+               default:  false
+
+              --checkJs  Enable error reporting in type-checked JavaScript files                         .
+                  type:  boolean
+               default:  false
+
+                  --jsx  Specify what JSX code is generated.
+                one of:  preserve, react-native, react, react-jsx, react-jsxdev
+               default:  undefined
+
+      --declaration, -d  Generate .d.ts files from TypeScript and JavaScript fil                         es in your project.
+                  type:  boolean
+               default:  `false`, unless `composite` is set
+
+       --declarationMap  Create sourcemaps for d.ts files.
+                  type:  boolean
+               default:  false
+
+  --emitDeclarationOnly  Only output d.ts files and not JavaScript files.
+                  type:  boolean
+               default:  false
+
+            --sourceMap  Create source map files for emitted JavaScript files.
+                  type:  boolean
+               default:  false
+
+              --outFile  Specify a file that bundles all outputs into one JavaSc                         ript file. If `declaration` is true, also designates a                          file that bundles all .d.ts output.
+
+               --outDir  Specify an output folder for all emitted files.
+
+       --removeComments  Disable emitting comments.
+                  type:  boolean
+               default:  false
+
+               --noEmit  Disable emitting files from a compilation.
+                  type:  boolean
+               default:  false
+
+               --strict  Enable all strict type-checking options.
+                  type:  boolean
+               default:  false
+
+                --types  Specify type package names to be included without being                          referenced in a source file.
+
+      --esModuleInterop  Emit additional JavaScript to ease support for importin                         g CommonJS modules. This enables `allowSyntheticDefault                         Imports` for type compatibility.
+                  type:  boolean
+               default:  false
+
+You can learn about all of the compiler options at https://aka.ms/tsconfig-reference
+
+(base) masae@kinnoMacBook-Pro typescript-javascript % tls
+zsh: command not found: tls
+(base) masae@kinnoMacBook-Pro typescript-javascript % ls
+README.md		package-lock.json	src
+node_modules		package.json
+(base) masae@kinnoMacBook-Pro typescript-javascript % ls ./node_modules/.bin/ts
+ls: ./node_modules/.bin/ts: No such file or directory
+(base) masae@kinnoMacBook-Pro typescript-javascript % ls /Users/masae/typescript-javascript/node_modules/.bin
+tsc		tsserver
+(base) masae@kinnoMacBook-Pro typescript-javascript % ls /Users/masae/typescript-javascript/src             
+install-typescript.ts
+(base) masae@kinnoMacBook-Pro typescript-javascript % ls /Users/masae/typescript-javascript/node_modules/.bin/tsc src/install-typescript.ts
+/Users/masae/typescript-javascript/node_modules/.bin/tsc
+src/install-typescript.ts
+(base) masae@kinnoMacBook-Pro typescript-javascript % ls src/
+install-typescript.ts
+(base) masae@kinnoMacBook-Pro typescript-javascript % vim src/installl-typescript
+
+let massage: string = 'Hello world';
+console.log({massage});
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+-- INSERT --

@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/kin-922/typescript-javascript/issues"
   },
-  "homepage": "https://github.com/kin-922/typescript-javascript#readme"
+  "homepage": "https://github.com/kin-922/typescript-javascript#readme",
+  "devDependencies": {
+    "typescript": "^3.7.5"
+  }
 }
